@@ -25,7 +25,7 @@ async function saveOcticon(name) {
   const colored = svg.replace("<path ", `<path fill="${ICON_COLOR}" `);
   await mkdir("assets/icons", { recursive: true });
   await writeFile(`assets/icons/${name}.svg`, colored);
-  return `<img src="assets/icons/${name}.svg" width="16"/>`;
+  return `<img src="assets/icons/${name}.svg" width="16" align="absmiddle"/>`;
 }
 
 function yearsAgo(fromDate, toDate) {
@@ -93,18 +93,15 @@ async function main() {
     saveOcticon("flame"),
   ]);
 
-  const rows = [
-    [calendarIcon, `Joined GitHub ${years} ${yearLabel} ago`],
-    [repoIcon, `${user.public_repos} Repositories`],
-    [databaseIcon, `${gbUsed.toFixed(2)} GB used`],
-    [commitIcon, `${totalCommits} commits`],
-    [flameIcon, `${streak} day streak of commits`],
+  const lines = [
+    `${calendarIcon} Joined GitHub ${years} ${yearLabel} ago`,
+    `${repoIcon} ${user.public_repos} Repositories`,
+    `${databaseIcon} ${gbUsed.toFixed(2)} GB used`,
+    `${commitIcon} ${totalCommits} commits`,
+    `${flameIcon} ${streak} day streak of commits`,
   ];
 
-  const tableRows = rows
-    .map(([icon, text]) => `  <tr><td valign="middle">${icon}</td><td valign="middle">${text}</td></tr>`)
-    .join("\n");
-  const block = `${START_MARK}\n<table>\n${tableRows}\n</table>\n${END_MARK}`;
+  const block = `${START_MARK}\n${lines.join("<br/>\n")}\n${END_MARK}`;
 
   const readme = await readFile("README.md", "utf8");
   const re = new RegExp(`${START_MARK}[\\s\\S]*?${END_MARK}`);
