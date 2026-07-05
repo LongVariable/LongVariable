@@ -1,4 +1,4 @@
-## Dlouhý Michal
+<img src="assets/name.svg" alt="Dlouhý Michal" height="56"/>
 
 ![Fullstack](https://img.shields.io/badge/-Fullstack-e74c3c?style=for-the-badge)
 ![Junior/Medior](https://img.shields.io/badge/-Junior%2FMedior-3498db?style=for-the-badge)
