@@ -1,4 +1,7 @@
-### Dlouhý Michal
+## Dlouhý Michal
+
+![Fullstack](https://img.shields.io/badge/-Fullstack-e74c3c?style=for-the-badge)
+![Junior/Medior](https://img.shields.io/badge/-Junior%2FMedior-3498db?style=for-the-badge)
 
 <!-- STATS:START -->
 <img src="assets/icons/calendar.svg" width="16" align="absmiddle"/> Joined GitHub 1 year ago<br/>
