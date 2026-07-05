@@ -1,11 +1,11 @@
 ### Dlouhý Michal
 
 <!-- STATS:START -->
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="16"/> Joined GitHub 1 year ago<br/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="16"/> 6 Repositories<br/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="16"/> 0.02 GB used<br/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="16"/> 48 commits<br/>
-<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="16"/> 1 day streak of commits
+<img src="assets/icons/calendar.svg" width="16"/> Joined GitHub 1 year ago<br/>
+<img src="assets/icons/repo.svg" width="16"/> 6 Repositories<br/>
+<img src="assets/icons/database.svg" width="16"/> 0.02 GB used<br/>
+<img src="assets/icons/git-commit.svg" width="16"/> 49 commits<br/>
+<img src="assets/icons/flame.svg" width="16"/> 1 day streak of commits
 <!-- STATS:END -->
 
 **Languages and Tools**

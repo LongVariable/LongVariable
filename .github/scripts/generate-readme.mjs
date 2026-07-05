@@ -1,6 +1,6 @@
 // Rewrites README.md stats block with live GitHub data for USER.
 // Plain text output (no generated images) — only numbers change on each run.
-import { readFile, writeFile } from "node:fs/promises";
+import { mkdir, readFile, writeFile } from "node:fs/promises";
 
 const USER = process.env.GITHUB_USER || "LongVariable";
 const START_MARK = "<!-- STATS:START -->";
@@ -16,6 +16,16 @@ async function fetchText(url) {
   const res = await fetch(url, { headers: { "User-Agent": "readme-stats-generator" } });
   if (!res.ok) throw new Error(`${url} -> ${res.status}`);
   return res.text();
+}
+
+const ICON_COLOR = "#8b949e";
+
+async function saveOcticon(name) {
+  const svg = await fetchText(`https://cdn.jsdelivr.net/npm/@primer/octicons/build/svg/${name}-16.svg`);
+  const colored = svg.replace("<path ", `<path fill="${ICON_COLOR}" `);
+  await mkdir("assets/icons", { recursive: true });
+  await writeFile(`assets/icons/${name}.svg`, colored);
+  return `<img src="assets/icons/${name}.svg" width="16"/>`;
 }
 
 function yearsAgo(fromDate, toDate) {
@@ -75,15 +85,20 @@ async function main() {
   const years = yearsAgo(created, today);
   const yearLabel = years === 1 ? "year" : "years";
 
-  const icon =
-    '<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="16"/>';
+  const [calendarIcon, repoIcon, databaseIcon, commitIcon, flameIcon] = await Promise.all([
+    saveOcticon("calendar"),
+    saveOcticon("repo"),
+    saveOcticon("database"),
+    saveOcticon("git-commit"),
+    saveOcticon("flame"),
+  ]);
 
   const lines = [
-    `${icon} Joined GitHub ${years} ${yearLabel} ago`,
-    `${icon} ${user.public_repos} Repositories`,
-    `${icon} ${gbUsed.toFixed(2)} GB used`,
-    `${icon} ${totalCommits} commits`,
-    `${icon} ${streak} day streak of commits`,
+    `${calendarIcon} Joined GitHub ${years} ${yearLabel} ago`,
+    `${repoIcon} ${user.public_repos} Repositories`,
+    `${databaseIcon} ${gbUsed.toFixed(2)} GB used`,
+    `${commitIcon} ${totalCommits} commits`,
+    `${flameIcon} ${streak} day streak of commits`,
   ];
 
   const block = `${START_MARK}\n${lines.join("<br/>\n")}\n${END_MARK}`;
