@@ -1,4 +1,12 @@
-# Dlouhý Michal
+### Dlouhý Michal
+
+<!-- STATS:START -->
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="16"/> Joined GitHub 1 year ago<br/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="16"/> 6 Repositories<br/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="16"/> 0.02 GB used<br/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="16"/> 48 commits<br/>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="16"/> 1 day streak of commits
+<!-- STATS:END -->
 
 **Languages and Tools**
 
