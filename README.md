@@ -1,11 +1,13 @@
 ### Dlouhý Michal
 
 <!-- STATS:START -->
-<img src="assets/icons/calendar.svg" width="16"/> Joined GitHub 1 year ago<br/>
-<img src="assets/icons/repo.svg" width="16"/> 6 Repositories<br/>
-<img src="assets/icons/database.svg" width="16"/> 0.02 GB used<br/>
-<img src="assets/icons/git-commit.svg" width="16"/> 49 commits<br/>
-<img src="assets/icons/flame.svg" width="16"/> 1 day streak of commits
+<table>
+  <tr><td valign="middle"><img src="assets/icons/calendar.svg" width="16"/></td><td valign="middle">Joined GitHub 1 year ago</td></tr>
+  <tr><td valign="middle"><img src="assets/icons/repo.svg" width="16"/></td><td valign="middle">6 Repositories</td></tr>
+  <tr><td valign="middle"><img src="assets/icons/database.svg" width="16"/></td><td valign="middle">0.02 GB used</td></tr>
+  <tr><td valign="middle"><img src="assets/icons/git-commit.svg" width="16"/></td><td valign="middle">50 commits</td></tr>
+  <tr><td valign="middle"><img src="assets/icons/flame.svg" width="16"/></td><td valign="middle">1 day streak of commits</td></tr>
+</table>
 <!-- STATS:END -->
 
 **Languages and Tools**
