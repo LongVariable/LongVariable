@@ -7,7 +7,7 @@
 <img src="assets/icons/calendar.svg" width="16" align="absmiddle"/> Joined GitHub 1 year ago<br/>
 <img src="assets/icons/repo.svg" width="16" align="absmiddle"/> 6 Repositories<br/>
 <img src="assets/icons/database.svg" width="16" align="absmiddle"/> 0.02 GB used<br/>
-<img src="assets/icons/git-commit.svg" width="16" align="absmiddle"/> 51 commits<br/>
+<img src="assets/icons/git-commit.svg" width="16" align="absmiddle"/> 70 commits<br/>
 <img src="assets/icons/flame.svg" width="16" align="absmiddle"/> 1 day streak of commits
 <!-- STATS:END -->
 
